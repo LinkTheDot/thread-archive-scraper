@@ -1,0 +1,15 @@
+[package]
+name = "duplicate-image-remover"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.42.*", features = ["full"] }
+anyhow = "1.0"
+clap = "4.5"
+tracing = "0.1.*"
+tracing-subscriber = "0.3.*"
+image = "0.25.*"
+image_hasher = "2.*"
+mime_guess = "2.0.5"
+rayon = "1.10.*"

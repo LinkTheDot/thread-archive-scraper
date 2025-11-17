@@ -1,0 +1,25 @@
+[package]
+name = "thread-archive-scraper"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+  "organization_scripts/dir_flattener",
+  "organization_scripts/duplicate-image-remover",
+  "organization_scripts/file_separation",
+  "organization_scripts/remove_duplicate_urls_from_file",
+]
+
+[dependencies]
+tracing = { version = "0.1.*", features = ["async-await"] }
+tracing-subscriber = "0.3.*"
+tracing-appender = "0.2.3"
+tokio = { version = "1.42", features = ["full"] }
+reqwest = { version = "0.12.9", features = ["json"] }
+scraper = { version = "0.22.*", features = ["atomic"] }
+anyhow = "1.0.*"
+futures = "0.3.*"
+ratelimit = "0.10.0"
+lazy_static = "1.5.0"
+rand = "0.8.5"

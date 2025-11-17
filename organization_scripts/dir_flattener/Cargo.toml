@@ -1,0 +1,11 @@
+[package]
+name = "dir_flattener"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2.5"
+anyhow = "1.0"
+clap = "4.5"
+tracing = "0.1.*"
+tracing-subscriber = "0.3.*"
